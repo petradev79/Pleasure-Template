@@ -1,0 +1,201 @@
+/* -----------------------------------------------*/
+/* SECTION GALLERY */
+/* -----------------------------------------------*/
+
+.section-gallery {
+	padding: 0;
+
+	.pleasure-showcase {
+		list-style: none;
+		width: 100%;
+		margin: 0;
+
+		li {
+			display: block;
+			float: left;
+			width: 25%;
+
+			.pleasure-photo {
+				width: 100%;
+				margin: 0;
+				overflow: hidden;
+				background-color: #000;
+
+				img {
+					opacity: 0.6;
+					width: 100%;
+					height: auto;
+					transform: scale(1.15);
+					transition: transform 0.5s, opacity 0.5s;
+				}
+
+				img:hover {
+					transform: scale(1.03);
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+/* -----------------------------------------------*/
+/* SECTION ZA PONETI */
+/* -----------------------------------------------*/
+
+.section-poneti {
+	background-color: $basicDark;
+}	
+
+	.poneti-box-contact {
+		margin-top: 40px;
+
+		@include mamaQuery { margin-top: 10px; }
+
+		.poneti-contact {
+		    background-color: $basic;
+		    border-radius: 5px;
+		    width: 90%;
+		    margin-left: 5%;
+		    box-shadow: 0 2px 2px #efefef;
+
+		    @include mamaQuery {
+		    	width: 100%;
+        		margin-left: 0%;
+		    }
+
+		    @include kidQuery { text-align: center; }
+
+		    div {
+		    	padding: 15px;
+				border-bottom: 1px solid #e8e8e8;
+				
+				span { font-size: 85%; }
+		    }
+
+		    div:first-child {
+		    	border-top-left-radius: 15px;
+		    	border-top-right-radius: 15px;
+		    }  
+		}
+	}
+
+	.poneti-box-img {
+		text-align: center;
+		margin-top: 30px;
+		padding-right: 3%;
+	}
+
+	.poneti-box {
+		padding-left: 3%;
+		margin-top: 50px;
+
+		@include mamaQuery {
+			margin-top: 30px;
+			font-size: 90%;
+		}
+	}
+
+	.app-screen {
+		width: 80%;
+
+		@include mamaQuery { width: 100%; }
+
+		@include kidQuery { width: 40%; }
+	}
+
+	.poneti-step {
+		margin-bottom: 50px;
+
+		@include mamaQuery { margin-bottom: 30px; }
+
+		@include kidQuery { margin-bottom: 20px; }
+
+		p { padding-top: 10px; }
+	}
+	
+	.poneti-step div {
+		color: $myColor;
+		border: 2px solid $myColor;
+		display: inline-block;
+		border-radius: 50%;
+		height: 55px;
+		width: 55px;
+		text-align: center;
+		padding: 5px;
+		// float: left;
+		font-size: 150%;
+		margin-right: 25px;
+
+		@include kidQuery {
+			height: 40px;
+        	width: 40px;
+        	margin-right: 15px;
+        	padding: 4px;
+        	font-size: 120%;
+		}
+	}	
+
+
+/* -----------------------------------------------*/
+/* SECTION KETERING */
+/* -----------------------------------------------*/
+
+.section-catering {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/catering-min.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;    
+
+	blockquote {
+		padding: 2%;
+		font-style: italic;
+		line-height: 145%;
+		position: relative;
+		margin-top: 40px;
+	}	
+
+	blockquote:before {
+		content: "\201C";
+		font-size: 500%;
+		display: block;
+		position: absolute;
+		top: -5px;
+		left: -5px;
+		color: $myColor;
+	}
+}
+
+/* -----------------------------------------------*/
+/* SECTION KONTAKT */
+/* -----------------------------------------------*/
+
+.section-contact {
+	background-color: $basic;
+
+	.contact-form {
+	  width: 60%;
+	  margin: 0 auto;
+
+	  @include mamaQuery { width: 80%; }
+
+	  @mixin babyQuery { width: 100%; }
+
+	  input[type=text],
+		input[type=email],
+		select,
+		textarea {
+		  width: 100%;
+		  padding: 7px;
+		  border-radius: 3px;
+		  border: 1px solid #ccc;
+		  margin: 10px;
+		}
+
+		textarea { height: 100px; }
+
+		input[type=checkbox] { margin: 10px 5px 10px 0; }
+	}	
+}
+
+	

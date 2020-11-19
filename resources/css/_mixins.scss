@@ -1,0 +1,68 @@
+/* -----------------------------------------------*/
+/* MEDIA QUERIES */
+/* -----------------------------------------------*/
+
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@mixin papaQuery {
+	@media only screen and (max-width: 1200px) {
+		@content;
+	}
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@mixin mamaQuery {
+	@media only screen and (max-width: 1023px) {
+		@content;
+	}
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@mixin kidQuery {
+	@media only screen and (max-width: 767px) {
+		@content;
+	}
+}
+
+/* Small phones: from 0 to 480px */
+
+@mixin babyQuery {
+	@media only screen and (max-width: 480px) {
+		@content;
+	}
+}
+
+/* ----------------------------------------------- */
+/* Animations */
+/* ----------------------------------------------- */
+
+.js--wp-1,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6,
+.js--wp-7,
+.js--wp-8 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--wp-2 {
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+}
+
+.boxes :nth-child(2) .js--wp-6 {
+	animation-delay: .5s;
+}
+
+.boxes :nth-child(3) .js--wp-6 {
+	animation-delay: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-3.animated,
+.js--wp-4.animated,
+.js--wp-5.animated,
+.js--wp-6.animated,
+.js--wp-7.animated,
+.js--wp-8.animated { opacity: 1; }
