@@ -4,7 +4,6 @@ It's the best restaurant in town, some of data I used is not valid at this time.
 - Responsive UI Design<br>
 - HTML and CSS from scratch<br>
 - Used CSS extension SCSS<br>
-- Animate.css Library<br>
-- Hamburger.css<br>
+- Animate and Hamburger Library<br>
 - jQuery Waypoints plugin<br>
 - Bootstrap
